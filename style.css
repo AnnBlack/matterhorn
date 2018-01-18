@@ -1,0 +1,343 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	margin: 0 !important;
+	padding: 0;
+	color: white;	
+	background-color: #191e3f;
+	font-weight: lighter;
+	font-family: "Roboto", sans-serif;
+}
+
+ul li {
+  list-style: none;
+}
+
+a, a:link,
+a:active,
+a:visited {
+	-webkit-transition: color 0.25s ease-out;
+	-moz-transition: color 0.25s ease-out;
+	-o-transition: color 0.25s ease-out;
+	transition: color 0.25s ease-out;
+	color:#fff;
+	outline: none;
+	text-decoration:none;
+}
+
+a:hover { 
+	color:#000;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+.page-header {
+	position: relative;
+}
+.header-nav {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.nav-wrapper {
+	width: 1100px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.side-nav {
+	position: fixed;
+	width: 300px;
+	left: 0;
+	top: 0;
+	margin: 0;
+	padding-left: 40px;
+	padding-top: 40px;
+	height: 100%;
+	height: calc(100% + 60px);
+	height: -moz-calc(100%);
+	padding-bottom: 60px;
+	background-color: #fff;
+	z-index: 999;
+	overflow-y: auto;
+	will-change: transform;
+	backface-visibility: hidden;
+	transform: translateX(-105%);
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+.side-nav li a {
+	display: block;
+	color: #000;
+	font-size: 2.5em;
+	margin-bottom: 10px;
+}
+
+.side-nav li a:hover {
+	color: #4aa97b;
+}
+
+nav#primary {
+	z-index: 5;
+	position: fixed;
+	top: 50%;
+	right: 16px;
+	margin-top: -50px;
+}
+nav#primary li {
+	position: relative;
+	height: 20px;
+}
+nav#primary a {
+	display: block;
+	width: 20px;
+	height: 20px;
+	text-indent: -9999px;
+	background: transparent url('images/nav-dot.png') 4px 4px no-repeat;
+}
+nav#primary a:hover, nav#primary a.active {
+	background: transparent url('images/nav-dot.png') 4px -16px no-repeat;
+}
+nav#primary h1 {
+	position: absolute;
+	right: 22px;
+	top: -7px;
+	display: none;
+	padding: 4px 20px 4px 7px;;
+	color: #fff;
+	white-space: nowrap;
+}
+
+.header-title, .header-subtitle {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.header-title {
+  font-size: 4em;
+  margin-bottom: 20px;
+  font-weight: 100;
+}
+
+.header-subtitle {
+	top: 45%;
+}
+.bgr-header {
+	background-image: url(images/mountains_header.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 100%;
+	height: 800px;
+}
+
+.page-wrapper {
+	width: 1100px;
+	margin: 0 auto;
+}
+
+.feature {
+	position: relative;
+}
+
+.feature-score {
+	display: block;
+	position: absolute;
+	left: 10%;
+  top: 32%;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+
+.feature-score::before {
+	content: "01";
+	display: block;
+		-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+	font-size: 15em;
+	position: absolute;
+	left: -70px;
+	top: -145px;
+	opacity: 0.1;
+	letter-spacing: -20px;
+}
+
+.feature-score--second {
+	display: block;
+	position: absolute;
+	right: 300px;
+  top: 190px;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+
+.feature-score--second::before {
+  content: "02";
+	display: block;
+		-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+	font-size: 15em;
+	position: absolute;
+  right: -80px;
+	top: -80px;
+	opacity: 0.1;
+	letter-spacing: -20px;
+}
+
+.feature-score--third {
+	display: block;
+	position: absolute;
+	left: 10%;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+
+.feature-score--third::before {
+	content: "03";
+	display: block;
+		-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+	font-size: 15em;
+	position: absolute;
+	left: -70px;
+	top: -145px;
+	opacity: 0.1;
+	letter-spacing: -20px;
+}
+
+.feature-image {
+	margin-left: 100px;
+}
+
+.feature-text {
+	width: 480px;
+	position: absolute;
+	top: 50px;
+	right: 80px;
+	color: rgb(212, 223, 237);
+  text-shadow: 0px 1.5px rgba(119, 117, 114, 0.75);
+}
+
+.second-feature {
+	opacity: 0.5;
+	margin-bottom: 300px;
+}
+
+.second-feature__title {
+	position: absolute;
+	font-size: 40em;
+	opacity: 0.5;
+	font-weight: bold;
+	top: 10px;
+	background: linear-gradient(to top right, #982a1e, #09417d 56.72%, #d61e4c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #0B2349;
+  margin: 20px auto;
+}
+
+.feature__list {
+	width: 600px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	
+	position: absolute;
+	top: 350px;
+	left: 350px;
+}
+
+.feature__list-item {
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 150px;
+	height: 60px;
+	margin: 10px;
+}
+
+.headphones {
+  background-image: url(images/headphones.png);
+}
+.badminton {
+  background-image: url(images/badminton.png);
+}
+.strategy {
+  background-image: url(images/strategy.png);
+}
+.sun-stone {
+  background-image: url(images/sun-stone.png);
+}
+.sixth-planet {
+  background-image: url(images/sixth-planet.png);
+}
+.american-football {
+  background-image: url(images/american-football.png);
+}
+
+.feature__images {
+	display: flex;
+	flex-direction: column;
+}
+.feature__images-item {
+	display: flex;
+	align-self: flex-end;
+	margin-top: -100px;
+}
+.feature__images-item:nth-child(2n) {
+	align-self: flex-start;
+}
+.feature-image {
+	margin-left: 0;
+	width: 700px;
+	height: 700px;
+}
+.feature__images-title {
+	width: 50%;
+	position: absolute;
+
+	font-size: 3em;
+	font-weight: 100;
+}
+
+.feature__images-title--left {
+	left: 300px;
+	margin-top: 150px;
+  background: linear-gradient(to top right, #fff7fd, rgba(255, 251, 254, 0.73) 41.18%, #03294e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #fff;
+}
+
+.feature__images-title--right {
+  right: 100px;
+  margin-top: 150px;
+  background: linear-gradient(314deg, #fff7fd, rgba(255, 251, 254, 0.73) 64.29%, #021c35);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #fff;
+}
